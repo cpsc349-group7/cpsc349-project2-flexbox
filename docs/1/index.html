@@ -7,7 +7,41 @@
         <link rel="stylesheet" href="/cpsc349-project2/styles/tailwind.css">
         <link rel="stylesheet" href="/cpsc349-project2/styles/main.css">
     </head>
-    <body style="background-color: ;">
+    <style>
+        :root {
+  --red: ;
+  --green: ;
+  --blue: ;
+
+  --accessible-color: calc(
+    (
+      (
+        (
+          (var(--red) * 299) +
+          (var(--green) * 587) +
+          (var(--blue) * 114)
+        ) / 1000
+      ) - 128
+    ) * -1000
+  );
+}
+
+.background {
+  color:
+    rgb(
+      var(--accessible-color),
+      var(--accessible-color),
+      var(--accessible-color)
+    );
+  background-color:
+    rgb(
+      var(--red),
+      var(--green),
+      var(--blue)
+    );
+}
+    </style>
+    <body class="background">
         <div class="wrapper">    
             <nav>
                 
