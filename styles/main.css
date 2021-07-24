@@ -94,7 +94,6 @@ footer {
 .row {
  display: flex;
  justify-content: flex-start;
- justify-content: space-evenly;
  flex-wrap: wrap;
  padding: 20px;
 }
