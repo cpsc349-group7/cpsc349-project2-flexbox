@@ -24,6 +24,7 @@ li {
 }
 h1 {
     font-weight: bold;
+    padding-bottom: 1rem;
 }
 p {
     line-height: 1.6em;
