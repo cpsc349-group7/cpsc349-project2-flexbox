@@ -9,7 +9,6 @@ html, body {
     font-family: 'Playfair Display', serif;
     background: #F2F2F7;
     color: #444;
-    height: 100%;
    
 }
 
@@ -93,7 +92,8 @@ footer {
 
 .row {
  display: flex;
- justify-content: flex-start, space-evenly;
+ justify-content: flex-start;
+ justify-content: space-evenly;
  flex-wrap: wrap;
  padding: 20px;
 }
@@ -160,3 +160,4 @@ footer {
 
     font-size: large;
 }
+
