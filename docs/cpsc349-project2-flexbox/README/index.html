@@ -1,0 +1,33 @@
+<h1>Getting started with Project 2</h1>
+<p>Install <a href="https://harelba.github.io/q/">q</a> in order to run SQL directly on TSV files:</p>
+<pre><code class="language-shell-session">$ sudo apt update
+$ sudo apt install python3-q-text-as-data
+</code></pre>
+<p><a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo">Fork</a> the GitHub <a href="https://github.com/ProfAvery/cpsc349-project2">cpsc349-project2</a> repository, then <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-forked-repository">clone</a>
+your forked repository locally:</p>
+<pre><code class="language-shell-session">$ git clone https://github.com/USERNAME/cpsc349-project2.git
+</code></pre>
+<p>Download the <a href="https://github.com/unsplash/datasets">Unsplash Lite dataset</a> and extract some pet photos:</p>
+<pre><code class="language-shell-session">$ cd cpsc349-project2/unsplash
+$ make
+</code></pre>
+<p>Install and start <a href="https://www.11ty.dev/">Eleventy</a>, <a href="https://browsersync.io/">Browsersync</a>, and the
+<a href="https://tailwindcss.com/docs/installation#using-tailwind-cli">Tailwind CLI</a>:</p>
+<pre><code class="language-shell-session">$ cd ..
+$ npm install
+$ npm start
+
+</code></pre>
+<p>Open the <a href="http://localhost:3000/">newly generated site</a>.</p>
+<p>To publish the site, enable <a href="https://guides.github.com/features/pages/">GitHub Pages</a> for the repository,
+set the source for the site to the <code>/docs</code> folder in the main branch,
+then run the publish script, commit the update, and push the repository:</p>
+<pre><code class="language-shell-session">$ npm run publish
+$ git add docs
+$ git commit -m 'Publishing site updates'
+$ git push origin main
+
+</code></pre>
+<p>To check the deployment results, click the
+<a href="../../deployments">Environments</a> link on the right-hand side of the
+page.</p>
